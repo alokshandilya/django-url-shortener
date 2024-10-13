@@ -1,13 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-      {% block title %}
-        ?
-      {% endblock %} | URL Shortener
-    </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %} ? {% endblock %} | URL Shortener</title>
   </head>
   <body>
     <nav>
@@ -16,14 +12,14 @@
       </ul>
     </nav>
     <hr />
-    <main>
-      {% block content %}
-      {% endblock %}
-    </main>
+    <main>{% block content %} {% endblock %}</main>
     <footer>
       <hr />
       <p>&copy; 2024 URL Shortener</p>
-      <p>Created by <a href="https://alokshandilya.pythonanywhere.com">Alok
-        Shandilya</a></p>
+      <p>
+        Created by
+        <a href="https://alokshandilya.pythonanywhere.com">Alok Shandilya</a>
+      </p>
+    </footer>
   </body>
 </html>
