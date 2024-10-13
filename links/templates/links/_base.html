@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      {% block title %}
+        ?
+      {% endblock %} | URL Shortener
+    </title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="{% url 'index' %}">URL Shortener | Home</a></li>
+      </ul>
+    </nav>
+    <hr />
+    <main>
+      {% block content %}
+      {% endblock %}
+    </main>
+    <footer>
+      <hr />
+      <p>&copy; 2024 URL Shortener</p>
+      <p>Created by <a href="https://alokshandilya.pythonanywhere.com">Alok
+        Shandilya</a></p>
+  </body>
+</html>
