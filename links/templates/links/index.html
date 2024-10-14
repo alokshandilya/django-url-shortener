@@ -6,4 +6,19 @@
 
 {% block content %}
   <h1>URL Shortener | Django Project</h1>
+  <ul>
+    {% for link in links %}
+      <li>
+        <div>
+          <strong>{{ link.name }}</strong> | clicks: {{ link.clicks }}
+        </div>
+        <div><em>{{ link.url }}</em></div>
+        <div>
+          <strong>Short URL: </strong>
+          <a href="{{ link.slug }}"><code>/{{ link.slug }}</code></a>
+        </div>
+        <br />
+      </li>
+    {% endfor %}
+  </ul>
 {% endblock %}
