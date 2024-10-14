@@ -7,9 +7,13 @@
 {% block content %}
 <h1>Add a new link</h1>
 
-<form action="" method="POST">
-  {% csrf_token %}
-  {{ form }}
-  <input type="submit" value="Add link">
-</form>
+{% load crispy_forms_tags %}
+<div>
+  <form action="" method="POST">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <br />
+    <input type="submit" value="Add link">
+  </form>
+</div>
 {% endblock %}
